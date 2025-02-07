@@ -38,20 +38,6 @@ nav {
     font-size: 20px;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .keys {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
 /* Introduction Section */
 #introduction {
     display: flex;
@@ -118,7 +104,42 @@ footer img {
     margin: 5px;
 }
 
-/* Media Queries */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .keys {
+        width: auto;
+        gap: 10px;
+    }
+    #skills, #edu, #project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pro, .pro1 {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .keys {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+    .images {
+        margin: 20px 0;
+    }
+}
+
 @media (max-width: 600px) {
     .hc, .sql, .java, .education, .pro, .pro1 {
         width: 100%;
