@@ -11,18 +11,14 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 68px;
     border-bottom: 1px solid rgba(67, 66, 66, 0.232);
     position: sticky;
     top: 0;
+    background-color: white;
+    width: 100%;
     padding: 0 20px;
-    background-color: #fff;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
+    z-index: 1000;
 }
 
 .keys {
@@ -34,11 +30,12 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    transition: 0.3s;
+    transition-duration: 0.4s;
 }
 
 .keys a:hover {
     color: orange;
+    font-size: 20px;
 }
 
 /* Responsive Navigation */
@@ -87,11 +84,8 @@ nav {
 }
 
 .hc, .sql, .java {
-    width: 300px;
-    padding: 20px;
-    box-shadow: 1px 2px 8px #212121;
-    border-radius: 10px;
-    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
 }
 
 /* Education & Projects */
@@ -108,7 +102,7 @@ nav {
     padding: 20px;
     box-shadow: 1px 2px 8px #212121;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: white;
 }
 
 /* Footer */
@@ -126,10 +120,10 @@ footer img {
 
 /* Media Queries */
 @media (max-width: 600px) {
+    .hc, .sql, .java, .education, .pro, .pro1 {
+        width: 100%;
+    }
     #intro h1 {
         font-size: 24px;
-    }
-    .hc, .sql, .java, .education, .pro, .pro1 {
-        max-width: 100%;
     }
 }
