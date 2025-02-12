@@ -202,7 +202,7 @@ footer p a:hover{
 
 
 
-@media (min-width: 375px) and (max-width:759px) {
+@media (min-width: 344px) and (max-width:619px) {
     .logo{
         margin-left: 20px;
         background-color: orange;
@@ -272,9 +272,11 @@ footer p a:hover{
 
     #edu {
         flex-direction: column;
+        align-items: center;
+        
     }
     .education{
-        width: auto;
+        width: 300px;
         height: 100px;
         font-size: 10px;
         margin-top: 9px;
@@ -301,7 +303,7 @@ footer p a:hover{
 /*......For Tabs and large screens...... */
 
 
-@media (min-width: 759px) and ( max-width: 1024px)  {
+@media (min-width: 619px) and ( max-width: 1351px)  {
     .logo{
         margin-left: 20px;
         background-color: orange;
@@ -356,9 +358,10 @@ footer p a:hover{
 
     #edu {
         flex-direction: column;
+        align-items: center;
     }
     .education{
-        width: auto;
+        width: 600px;
         height: 150px;
         margin-top: 9px;
     }
