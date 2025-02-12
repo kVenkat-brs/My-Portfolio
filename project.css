@@ -1,19 +1,18 @@
 *{
     font-family:Sans-serif;
-    background-color: #eee;
+    background-color:#212121;
 }
 nav{
     display: flex;
     justify-content: space-between; 
     height: 68px;
-    border-bottom:1px solid rgba(67, 66, 66, 0.232);
     position:sticky;
     top: 0px;
 
 }
 #introduction{
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .logo{
     margin-left: 20px;
@@ -21,6 +20,7 @@ nav{
     font-size: 17px;
     height:60px;
     transition-duration: 0.5s;
+    color:white ;
 }
 .keys{
     display: flex;
@@ -32,7 +32,7 @@ nav{
 }
 .keys a{
     text-decoration: none;
-    color: black;
+    color: #eee;
     transition-duration: 0.4s;
 
 }
@@ -52,12 +52,12 @@ nav{
 }
 #intro h1{
     font-size: 50px;
-    color: #212121;
+    color: white;
     margin-bottom: 20px;
 }
 .hire{
     background-color: orange;
-    color: black;
+    color:#212121;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
@@ -72,23 +72,17 @@ span{
     color: orange;
 }
 #intro p{
-    color: #555;
+    color: #eee;
     line-height: 22px;
 }
 .images{
     margin-left: 8%;
     margin-top: 5%;
     width: auto;
-    height: auto;
-    background-color: #eee;
-    
-    
-    
-   
+    height: auto;  
 }
 .boy{
     border-radius: 15px;
-    box-shadow:1px 2px 8px #212121;
     width: 250px;
     transition-duration: 0.5s;
 }
@@ -97,59 +91,61 @@ span{
     
 }
 #skills{    
-    width: 100%;
     display:flex;
-    justify-content: space-evenly;
+   justify-content: center;
+    background-color: black;
+   padding: 50px;
+   
 }
 .skill{
-    width: 350px;
-    height: 200px;
-    color: #555;
-    box-shadow:1px 2px 8px #212121;
-    border-radius: 20px ;
+    border-radius: 10px ;
     transition-duration: 0.5s;
-    padding: 10px;
+    margin-left: 50px;
+    background-color: orange;
+    padding: 5px;
+    font-weight: 300;
+}
+.skill p{
+    background-color: orange;
+    
 }
 #skillhead{
     font-size: 30px;
     text-align: center;
+    margin-top: 190px;
+    color: white;
 }
-.skill h3{
-    margin-left: 10px;
+.skill #s,.skill #j,.skill #jd{
+    width: 70px;
+    text-align: center;
+}
+.skill p{
     color: black;
+    font-weight: bold;
 }
 .skill:hover{
     
     transform: scale(1.1);
     
 }
-.skill a{
-    background-color: orange;
-    text-decoration: none;
-    color: black;
-    padding: 7px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 50px;
-    transition-duration: 0.5s;
-}
-.skill a:hover{
-    background-color:rgba(255, 166, 0, 0.816) ;
-}
+
 #eduheading{
     font-size: 30px;
     text-align: center;
+    margin-top: 100px;
+    color: white;
 }
 .education{
     width: 350px;
     height: 150px;
-    box-shadow:1px 2px 8px #212121;
     padding: 10px;
     border-radius: 20px;
     transition-duration: 0.5s;
+    color: #eee;
 }
 .education p{
     line-height: 10px;
+    
     
 }
 .education:hover{
@@ -158,50 +154,52 @@ span{
 #edu{
     display: flex;
     justify-content: space-evenly;
-    background-color:rgba(255, 166, 0, 0.74);
+    background-color:black;
     padding: 50px;
 }
 .proheading{
     font-size: 30px;
     text-align: center;
+    margin-top: 100px;
+    color: white;
     
 
 }
 #project{
     display: grid;
     justify-content: center;
-    background-color:#555;
+    background-color:black;
     padding: 50px;
 }
 .pro,.pro1{
     height: 150px;
-    box-shadow:1px 2px 8px #212121;
-    margin-left: 40px;
     padding: 10px;
     width: 1300px;
+    border-radius: 20px;
     transition-duration: 0.5s;
 }
 .pro1{
     margin-top: 20px;
 
 }
+h3{
+    color: white;
+}
 .pro p,.pro1 p{
-    color:#555;
+    color:#eee;
 }
 .pro:hover,.pro1:hover{
     transform: scale(1.1);
 }
 footer{
-    height: 150px;
-    box-shadow:-1px -2px 8px #212121;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 10px;
-    color: white;
+    height: 100%;
+    text-align: center; 
+    padding: 10px;
     background-color: orange;
 }
-footer h1,footer img, footer a{
+footer h1,footer img, footer a,footer p{
     background-color:orange;
+    color: black;
 }
 /* Mobile Devices */
 @media (max-width: 768px) {
