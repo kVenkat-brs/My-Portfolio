@@ -244,7 +244,7 @@ footer p a:hover{
 
 
 
-@media (min-width: 344px) and (max-width:619px) {
+@media (min-width: 300px) and (max-width:619px) {
     .logo{
         margin-left: 20px;
         background-color: orange;
